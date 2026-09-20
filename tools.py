@@ -1,13 +1,12 @@
 """
 tools.py
 --------
-Fonctions extraites de Analysis.ipynb / prediction.ipynb, réutilisables par l'agent.
+Funcctions extracted from the notebooks
+Used files (generated at the end of prediction.ipynb) :
+    global_dataset.csv  
+    pm25_model.pkl
 
-Prérequis (générés en ajoutant 2 lignes à la fin de prediction.ipynb) :
-    global_dataset.csv  -> global_df sauvegardé (date + features + target)
-    pm25_model.pkl       -> pipeline entraîné (PolynomialFeatures + LassoCV), via joblib.dump(reg, ...)
-
-Colonnes de global_dataset.csv (23 colonnes) :
+used features in the global_dataset.csv (23 columns) :
     date, temp_mean, temp_max, temp_min, precipitation, wind_speed_mean,
     wind_speed_max, humidity_mean, solar_radiation, wind_sin, wind_cos,
     day_of_year, month, year, lag_1, lag_7, lag_30, lag_365,
@@ -22,11 +21,11 @@ import numpy as np
 import pandas as pd
 from langchain.tools import tool
 
+# paths to the model and the data
 DATA_PATH = "global_dataset.csv"
 MODEL_PATH = "pm25_model.pkl"
 
-# Colonnes météo : on suppose leur dernière valeur connue constante pour les
-# prédictions futures, faute de prévisions météo disponibles (limitation documentée).
+# ordering the studied features and the targetted studed features being the pm2.5 level
 METEO_COLS = [
     "temp_mean", "temp_max", "temp_min", "precipitation", "wind_speed_mean",
     "wind_speed_max", "humidity_mean", "solar_radiation", "wind_sin", "wind_cos",
@@ -37,7 +36,7 @@ FEATURE_ORDER = METEO_COLS + [
 ]
 TARGET_COL = "pm2.5 concentration"
 
-
+# functions to load data and order it by date, and the model
 def _load_data() -> pd.DataFrame:
     df = pd.read_csv(DATA_PATH, parse_dates=["date"])
     return df.sort_values("date").reset_index(drop=True)
@@ -52,16 +51,16 @@ def _load_model():
 # ---------------------------------------------------------------------------
 @tool
 def get_pm25_data(start_date: str, end_date: str) -> dict:
-    """Récupère les concentrations de PM2.5 mesurées (historique réel) entre deux dates.
+    """Collects the PM 2.5 concentrations from the historical dataset on a specified period of time
 
     Args:
-        start_date: date de début au format YYYY-MM-DD
-        end_date: date de fin au format YYYY-MM-DD (incluse)
+        start_date: format YYYY-MM-DD
+        end_date: format YYYY-MM-DD (included)
 
     Returns:
-        dict avec le nombre de jours, la moyenne, min, max, et la série de valeurs.
-        Retourne un statut d'erreur explicite si la période est hors des données
-        disponibles (2022-01-01 à la dernière date connue) plutôt que d'halluciner.
+        dictionary containing the number of days, average, min, max, and values.
+        Returns an error if the designated dates are not in the dataset
+        To avoid hallucinations the available dates are from 2022-01-01 to 2026-03-23.
     """
     df = _load_data()
     mask = (df["date"] >= start_date) & (df["date"] <= end_date)
@@ -71,8 +70,8 @@ def get_pm25_data(start_date: str, end_date: str) -> dict:
         return {
             "status": "no_data",
             "message": (
-                f"Aucune donnée entre {start_date} et {end_date}. "
-                f"Données disponibles du {df['date'].min().date()} au {df['date'].max().date()}."
+                f"no data from {start_date} to {end_date}. "
+                f"available data from {df['date'].min().date()} to {df['date'].max().date()}."
             ),
         }
 
@@ -93,22 +92,17 @@ def get_pm25_data(start_date: str, end_date: str) -> dict:
 # ---------------------------------------------------------------------------
 @tool
 def predict_pm25(horizon_days: int) -> dict:
-    """Prédit la concentration de PM2.5 pour les N prochains jours, à partir d'aujourd'hui.
-
-    LIMITATION IMPORTANTE : le modèle a été entraîné avec des features météo
-    (température, humidité, vent...). Aucune prévision météo n'est disponible
-    pour le futur, donc cette fonction suppose que la météo reste identique
-    à la dernière journée connue pendant tout l'horizon. Les prédictions à
-    plus de 2-3 jours doivent donc être interprétées avec prudence.
+    """Predicts the PM2.5 concentration for the following days, will throw an error message for a prediction longer than a month.
 
     Args:
-        horizon_days: nombre de jours à prédire dans le futur (1 à 14 recommandé)
+        horizon_days: nombre de jours à prédire dans le futur due to significant noise in the studied event,
+        it is best to avoid more than 2 weeks' worth of prediction
 
     Returns:
-        dict avec la liste des prédictions par jour et un avertissement de fiabilité.
+        dictionnary with predicted values.
     """
     if horizon_days < 1 or horizon_days > 30:
-        return {"status": "error", "message": "horizon_days doit être entre 1 et 30."}
+        return {"status": "error", "message": "horizon_days dmust be between 1 and 30."}
 
     df = _load_data()
     model = _load_model()
@@ -122,7 +116,7 @@ def predict_pm25(horizon_days: int) -> dict:
         target_date = last_date + pd.Timedelta(days=i)
         day_of_year = target_date.dayofyear
         row = {
-            **{col: last_row[col] for col in METEO_COLS},  # météo figée (limitation)
+            **{col: last_row[col] for col in METEO_COLS},  # a limitation of this approach is the fact that we suppose the weather stays the same
             "day_of_year": day_of_year,
             "month": target_date.month,
             "year": target_date.year,
@@ -138,15 +132,15 @@ def predict_pm25(horizon_days: int) -> dict:
         X_future = pd.DataFrame([row])[FEATURE_ORDER]
         pred = float(model.predict(X_future)[0])
         predictions.append({"date": str(target_date.date()), "predicted_pm25": round(pred, 2)})
-        history.append(pred)  # la prédiction devient un lag pour le jour suivant
+        history.append(pred)  # prediction becomes lag for the following day
 
     return {
         "status": "ok",
         "horizon_days": horizon_days,
         "predictions": predictions,
         "reliability_warning": (
-            "Météo future supposée constante (dernière valeur connue). "
-            "Fiabilité décroissante au-delà de 2-3 jours."
+            "Weather assumed to stay fix "
+            "The reliability of the prediction decreases the further we are from the current date"
         ),
     }
 
@@ -156,18 +150,18 @@ def predict_pm25(horizon_days: int) -> dict:
 # ---------------------------------------------------------------------------
 @tool
 def compute_stat(metric: str, period: str | None = None) -> dict:
-    """Calcule une statistique sur les données ou les performances du modèle.
+    """Computes statistics on the values and model performances.
 
     Args:
-        metric: un parmi "mean", "seasonal_mean", "r2", "mae", "rmse"
-            - "mean" : moyenne de PM2.5 sur la période
-            - "seasonal_mean" : moyenne par saison (hiver/printemps/été/automne)
-            - "r2" / "mae" / "rmse" : performance du modèle sur le jeu de test
+        metric: "mean", "seasonal_mean", "r2", "mae", "rmse"
+            - "mean" :  PM2.5 over a periode
+            - "seasonal_mean" : mean over seasons (hiver/printemps/été/automne)
+            - "r2" / "mae" / "rmse" : model performance over data
               (hiver 2025-2026), ignore le paramètre period
-        period: optionnel, "YYYY-MM-DD:YYYY-MM-DD" pour restreindre "mean"
+        period: optionnal, "YYYY-MM-DD:YYYY-MM-DD" to restrict the mean "mean"
 
     Returns:
-        dict avec la valeur calculée et son interprétation.
+        dict with computed prediction and an interpretation.
     """
     df = _load_data()
 
@@ -204,7 +198,7 @@ def compute_stat(metric: str, period: str | None = None) -> dict:
         return {"status": "ok", "metric": metric, "value": round(values[metric], 3),
                 "test_period": "2025-10-01 à aujourd'hui"}
 
-    return {"status": "error", "message": f"Métrique '{metric}' inconnue. Utilise mean, seasonal_mean, r2, mae ou rmse."}
+    return {"status": "error", "message": f"The metric '{metric} is unknown'. Use mean, seasonal_mean, r2, mae ou rmse."}
 
 
 # ---------------------------------------------------------------------------
@@ -212,16 +206,16 @@ def compute_stat(metric: str, period: str | None = None) -> dict:
 # ---------------------------------------------------------------------------
 @tool
 def plot_trend(period: str) -> dict:
-    """Génère un graphique de l'évolution de PM2.5 sur une période donnée.
+    """Plots a graph to watch concentration evolution over time.
 
     Args:
         period: "YYYY-MM-DD:YYYY-MM-DD"
 
     Returns:
-        dict avec l'image encodée en base64 (PNG) et un résumé textuel.
+        dict with encoded iamge in base64 (PNG) and a textual summary.
     """
     import matplotlib
-    matplotlib.use("Agg")  # pas d'affichage interactif, on exporte juste l'image
+    matplotlib.use("Agg")  # we will just export the image
     import matplotlib.pyplot as plt
 
     df = _load_data()
@@ -229,11 +223,11 @@ def plot_trend(period: str) -> dict:
     subset = df[(df["date"] >= start) & (df["date"] <= end)]
 
     if subset.empty:
-        return {"status": "no_data", "message": f"Aucune donnée entre {start} et {end}."}
+        return {"status": "no_data", "message": f"No data from {start} to {end}."}
 
     fig, ax = plt.subplots(figsize=(10, 4))
     ax.plot(subset["date"], subset[TARGET_COL])
-    ax.set_title(f"PM2.5 — {start} à {end}")
+    ax.set_title(f"PM2.5 — {start} to {end}")
     ax.set_ylabel("µg/m³")
     fig.autofmt_xdate()
 
