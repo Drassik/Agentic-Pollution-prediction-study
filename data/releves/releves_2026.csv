@@ -1,0 +1,165 @@
+Data rilevamento;Ora;Id Rete Monitoraggio;Codice Istat Comune;Progr. Punto Comune;Denominazione Stazione;Id Parametro;Descr. Parametro;Id Un. misura;Descr. Un. misura;Valore;Stato
+01/01/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;72.0;V
+02/01/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;36.0;V
+03/01/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;39.0;V
+04/01/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;32.0;V
+05/01/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;35.0;V
+06/01/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;42.0;V
+07/01/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;45.0;V
+08/01/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;56.0;V
+09/01/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;60.0;V
+10/01/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;7.0;V
+11/01/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;14.0;V
+12/01/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;33.0;V
+13/01/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;55.0;V
+14/01/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;56.0;V
+15/01/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;62.0;V
+16/01/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;63.0;V
+17/01/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;16.0;V
+18/01/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;20.0;V
+19/01/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;20.0;V
+20/01/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;37.0;V
+21/01/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;48.0;V
+22/01/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;57.0;V
+23/01/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;58.0;V
+24/01/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;35.0;V
+25/01/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;6.0;V
+26/01/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;26.0;V
+27/01/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;33.0;V
+28/01/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;7.0;V
+29/01/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;24.0;V
+30/01/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;24.0;V
+31/01/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;31.0;V
+01/02/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;37.0;V
+02/02/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;39.0;V
+03/02/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;13.0;V
+04/02/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;16.0;V
+05/02/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;14.0;V
+06/02/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;11.0;V
+07/02/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;27.0;V
+08/02/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;38.0;V
+09/02/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;29.0;V
+10/02/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;17.0;V
+11/02/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;23.0;V
+12/02/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;27.0;V
+13/02/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;10.0;V
+14/02/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;6.0;V
+15/02/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;20.0;V
+16/02/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;17.0;V
+17/02/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;3.0;V
+18/02/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;17.0;V
+19/02/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;14.0;V
+20/02/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;17.0;V
+21/02/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;34.0;V
+22/02/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;52.0;V
+23/02/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;45.0;V
+24/02/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;44.0;V
+25/02/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;50.0;V
+26/02/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;46.0;V
+27/02/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;45.0;V
+28/02/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;48.0;V
+01/03/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;53.0;V
+02/03/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;42.0;V
+03/03/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;34.0;V
+04/03/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;40.0;V
+05/03/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;56.0;V
+06/03/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;64.0;V
+07/03/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;49.0;V
+08/03/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;42.0;V
+09/03/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;45.0;V
+10/03/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;;E
+11/03/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;23.0;V
+12/03/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;37.0;V
+13/03/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;35.0;V
+14/03/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;13.0;V
+15/03/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;4.0;V
+16/03/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;14.0;V
+17/03/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;;E
+18/03/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;;E
+19/03/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;;E
+20/03/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;;E
+21/03/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;;E
+22/03/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;;E
+23/03/2026;23:59;13;001272;806;Torino - Lingotto;PM10_GBV;PM10 - Basso Volume;23;microgrammi / metro cubo;;E
+01/01/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;63.0;V
+02/01/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;32.0;V
+03/01/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;35.0;V
+04/01/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;30.0;V
+05/01/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;22.0;V
+06/01/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;36.0;V
+07/01/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;39.0;V
+08/01/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;46.0;V
+09/01/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;;E
+10/01/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;6.0;V
+11/01/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;11.0;V
+12/01/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;26.0;V
+13/01/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;44.0;V
+14/01/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;43.0;V
+15/01/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;53.0;V
+16/01/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;57.0;V
+17/01/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;17.0;V
+18/01/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;18.0;V
+19/01/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;19.0;V
+20/01/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;33.0;V
+21/01/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;43.0;V
+22/01/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;54.0;V
+23/01/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;54.0;V
+24/01/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;34.0;V
+25/01/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;10.0;V
+26/01/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;23.0;V
+27/01/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;31.0;V
+28/01/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;8.0;V
+29/01/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;25.0;V
+30/01/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;22.0;V
+31/01/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;33.0;V
+01/02/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;34.0;V
+02/02/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;35.0;V
+03/02/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;11.0;V
+04/02/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;18.0;V
+05/02/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;14.0;V
+06/02/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;7.0;V
+07/02/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;25.0;V
+08/02/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;37.0;V
+09/02/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;21.0;V
+10/02/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;17.0;V
+11/02/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;22.0;V
+12/02/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;24.0;V
+13/02/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;7.0;V
+14/02/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;6.0;V
+15/02/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;17.0;V
+16/02/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;15.0;V
+17/02/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;2.0;V
+18/02/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;12.0;V
+19/02/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;13.0;V
+20/02/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;15.0;V
+21/02/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;30.0;V
+22/02/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;46.0;V
+23/02/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;38.0;V
+24/02/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;37.0;V
+25/02/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;42.0;V
+26/02/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;39.0;V
+27/02/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;29.0;V
+28/02/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;31.0;V
+01/03/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;45.0;V
+02/03/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;34.0;V
+03/03/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;30.0;V
+04/03/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;32.0;V
+05/03/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;50.0;V
+06/03/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;55.0;V
+07/03/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;39.0;V
+08/03/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;35.0;V
+09/03/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;36.0;V
+10/03/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;33.0;V
+11/03/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;20.0;V
+12/03/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;33.0;V
+13/03/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;26.0;V
+14/03/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;12.0;V
+15/03/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;3.0;V
+16/03/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;11.0;V
+17/03/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;16.0;V
+18/03/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;8.0;V
+19/03/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;14.0;V
+20/03/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;18.0;V
+21/03/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;24.0;V
+22/03/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;16.0;V
+23/03/2026;23:59;13;001272;806;Torino - Lingotto;PM2.5_B;PM2.5 - Beta;23;microgrammi / metro cubo;18.0;V
