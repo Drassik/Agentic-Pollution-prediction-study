@@ -75,7 +75,7 @@ resource usage on consumer hardware (tested on 8–12 GB VRAM).
 
 ## Demo
 
-![Agent answering a PM2.5 question via tool-calling](assets/agent_demo.png)
+![Agent answering a PM2.5 question via tool-calling](docs/images/image.png)
 
 The agent correctly routes the question to `get_pm25_data`, retrieves the real
 historical value, and formats a grounded answer — no hallucinated figures.
