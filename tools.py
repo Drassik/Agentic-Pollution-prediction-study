@@ -95,7 +95,7 @@ def predict_pm25(horizon_days: int) -> dict:
     """Predicts the PM2.5 concentration for the following days, will throw an error message for a prediction longer than a month.
 
     Args:
-        horizon_days: nombre de jours à prédire dans le futur due to significant noise in the studied event,
+        horizon_days: number of days to forecast into the future, due to significant noise in the studied event,
         it is best to avoid more than 2 weeks' worth of prediction
 
     Returns:
@@ -109,7 +109,7 @@ def predict_pm25(horizon_days: int) -> dict:
 
     last_row = df.iloc[-1].copy()
     last_date = df["date"].max()
-    history = df[TARGET_COL].tolist()  # historique réel, pour les lags
+    history = df[TARGET_COL].tolist()  # real history, used for lag features
 
     predictions = []
     for i in range(1, horizon_days + 1):
@@ -196,9 +196,9 @@ def compute_stat(metric: str, period: str | None = None) -> dict:
             "rmse": np.sqrt(mean_squared_error(y_test, y_pred)),
         }
         return {"status": "ok", "metric": metric, "value": round(values[metric], 3),
-                "test_period": "2025-10-01 à aujourd'hui"}
+                "test_period": "2025-10-01 to today"}
 
-    return {"status": "error", "message": f"The metric '{metric} is unknown'. Use mean, seasonal_mean, r2, mae ou rmse."}
+    return {"status": "error", "message": f"The metric '{metric} is unknown'. Use mean, seasonal_mean, r2, mae or rmse."}
 
 
 # ---------------------------------------------------------------------------
@@ -246,7 +246,7 @@ def plot_trend(period: str) -> dict:
 
 
 # ---------------------------------------------------------------------------
-# Tests rapides — juste pour vérifier que chaque fonction tourne sans erreur
+# # Quick sanity checks — just verifying each function runs without error
 # ---------------------------------------------------------------------------
 
 if __name__ == "__main__":

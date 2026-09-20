@@ -72,6 +72,14 @@ No API key required — the agent runs entirely on a local Ollama model
 (`qwen3:8b`), chosen for a reasonable balance of tool-calling reliability and
 resource usage on consumer hardware (tested on 8–12 GB VRAM).
 
+
+## Demo
+
+![Agent answering a PM2.5 question via tool-calling](assets/agent_demo.png)
+
+The agent correctly routes the question to `get_pm25_data`, retrieves the real
+historical value, and formats a grounded answer — no hallucinated figures.
+
 ## Known limitations
 
 - **No real future weather data.** `predict_pm25` assumes the last known weather
